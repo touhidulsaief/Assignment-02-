@@ -1,9 +1,0 @@
-import 'dart:io';
-
-void greet(String name) {
-  print("Hello $name");
-}
-
-void main() {
-  greet("John");
-}

@@ -1,9 +1,16 @@
 import 'dart:io';
 
-String reverse(String input) {
-  return input.split('').reversed.join();
-}
-
 void main() {
-  print(reverse("Hello"));
+  Map<String, dynamic> person = {
+    "name": "Hasan Ahmed",
+    "address": "Sylhet",
+    "age": 25,
+    "country": "Bangladesh",
+  };
+
+  person["country"] = "Pakistan";
+  
+  person.forEach((key, value) {
+    print("$key: $value");
+  });
 }

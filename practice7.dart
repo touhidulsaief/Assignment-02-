@@ -1,13 +1,15 @@
-import 'dart:io';
-
-int power(int a, int b) {
-  int result = 1;
-  for (int i = 0; i < b; i++) {
-    result *= a;
-  }
-  return result;
-}
-
 void main() {
-  print(power(5, 3));
+  Map<String, String> contact = {
+    "name": "Hasan",
+    "phone": "01738362938",
+    "city": "Sylhet",
+    "mail": "hasan123@gmail.com",
+  };
+
+  var r = contact.keys.where((key) => key.length == 4);
+
+  print("Keys with length 4:");
+  for (var key in r) {
+    print(key);
+  }
 }

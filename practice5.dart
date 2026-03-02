@@ -1,10 +1,19 @@
 import 'dart:io';
 
-void area(double r) {
-  const pi = 3.1416;
-  print(pi * r * r);
-}
-
 void main() {
-  area(5);
+  List<String> names = [
+    "ahasan",
+    "ali",
+    "tanim",
+    "shuvo",
+    "tahsan",
+    "farid",
+    "sahid",
+  ];
+
+  List<String> startWithS = names
+      .where((element) => element.startsWith("a"))
+      .toList();
+
+  print(startWithS);
 }
